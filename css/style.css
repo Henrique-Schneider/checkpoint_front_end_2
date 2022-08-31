@@ -1,93 +1,60 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url(./pokemon_wallpaper01_1680.jpg);
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  width: 100%;
+  background-image: url(../img/pokemon_wallpaper01_1680.jpg);
+  height: 100vh;
+  padding-top: 100px;
 }
 
 .main-container {
   display: flex;
+  flex-direction: row;
   gap: 20px;
-  justify-content: space-between;
   align-items: center;
-  width: 80%;
-  height: 80vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
 }
 
-.container {
+.container-form {
+  background-color: #fff;
   display: flex;
+  width: 400px;
   flex-direction: column;
   align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  gap: 30px;
-  padding: 0;
-  background-color: #fafafa;
-  border-radius: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 40%;
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
+  justify-content: center;
+  border: 1px solid;
+  gap: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .header-card {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  background-color: rgb(222, 202, 202);
   width: 100%;
-  padding: 10px;
-  border-radius: 20px 20px 0 0;
-}
-
-#form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  background-color: aqua;
+  text-align: center;
+  padding: 5px;
 }
 
 .form-control {
-  width: 100%;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
 }
-.form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-.form-control input {
-  border: 2px solid #f0f0f0;
-  display: block;
-  border-radius: 10px;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px;
-}
-.form-control i {
-  position: absolute;
-  top: 48px;
-  right: 20px;
-  visibility: hidden;
-}
-.form-control small {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #botao {
@@ -109,62 +76,66 @@ body {
   color: #eee;
 }
 
-/*# sourceMappingURL=style.css.map */
+#form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* card */
 
 #card {
+  margin: 5px;
   display: flex;
-
-  background: rgba(248, 231, 28, 0.95);
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  height: 500px;
+  background: rgba(245, 166, 35, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 20px;
-  box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.3);
-  flex-direction: column;
-  align-items: center;
-  width: 40%;
-  height: 100%;
-  overflow: hidden;
 }
+
 #card img {
-  width: 90%;
-  height: 45%;
-  margin-top: 20px;
+  width: 98%;
+  height: 40%;
+  margin: 2%;
   border-radius: 5px;
-  border: 5px;
   border-style: groove;
-  border-color: #8c8fa4;
+  border-color: #000000;
 }
 
 #card h2 {
   margin-top: 20px;
-  font-size: 2vw;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-#card p {
-  background: rgba( 158, 158, 12, 0.7 );
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 15px );
-  border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  margin-top: 20px;
-  padding: 5px;
-  width: 90%;
-  height: 28%;
-  overflow-wrap: break-word;
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px 3px black;
-}
 .divTipo {
   width: 60%;
+  background: rgba( 255, 159, 0, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 50px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .divTipo span {
+
+  
   display: flex;
   margin: 10px;
   padding: 5px 20px;
@@ -177,9 +148,26 @@ body {
   color: #141313;
 }
 
-.inputs {
-  margin-top: 90px;
-  width: 100%;
+#card p {
+  width: 90%;
+  height: 180px;
+  overflow-wrap: break-word;
+  color: rgb(0, 0, 0);
+
+  
+  background: rgba( 255, 255, 255, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  padding: 5px;
 }
 
 .cor-bug {

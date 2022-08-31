@@ -15,7 +15,7 @@ function enviar(){
   
   card.innerHTML =`
   <img src=${img} />
-   <h2>${h2Titulo}</h2>
+   <h4>${h2Titulo}</h4>
   <div class="divTipo">
   <span class="cor-${spanTipo}">${spanTipo}</span>
   <span class="cor-${spanTipos}">${spanTipos}</span>
